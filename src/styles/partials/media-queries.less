@@ -1,0 +1,585 @@
+/* ===== #MADIA QUERIES FOR RESPONSIVE DESIGN ===== */
+
+/* ----- DESKTOP VERSION ----- */
+
+@media screen and (min-width: 1575px) {
+header,
+footer,
+.clients,
+.services,
+.feedback {
+	background-size:   100% 100%;
+}
+}
+
+@media screen and (max-width: 1199px) {
+body {
+    font-size: .85rem;
+}
+
+.slide_info {
+    padding: 0 4.5% 15% 0;
+    background: url("../img/narrow.png") no-repeat 90% 100%;
+}
+
+.services {
+    & .container {
+        min-height: 70em;
+        background-size: auto 90%;
+    }
+}	
+}
+
+/* ----- TABLET VERSION ----- */
+
+@media screen and (max-width: 1023px) {    
+body {
+    font-size: .8rem;
+}
+
+header {
+    min-height: 68em;
+
+    & .container {
+        background-size: 100% auto;
+    }
+}
+
+.header-top {
+    margin-bottom: 3em;
+}
+
+.nav {
+    padding-top: 8em;
+}
+
+.menu {
+    width: 85%;
+    margin: auto;
+    display: block;
+
+    & li {
+        text-align: left;
+        padding-left: 2.8em;
+    }
+
+    & li + li {
+        margin-left: 3em;
+    }
+}
+
+.slide_info {
+    width: 55%;
+    font-size: 5.1em;
+    padding: 0 4.5% 13% 0;
+    background-size:          70%;
+    background-repeat:  no-repeat;
+    background-position: 85% 100%;
+    background-image: url("../img/narrow.png");
+
+    & div + div {
+        width: 70%;
+        margin-top: 3%;
+        font-size: 60%;
+    }
+}
+
+.feedback__contact-form {
+    width: 45%;
+    padding: 3rem 1.5rem;
+    border-radius: .7rem;
+}
+
+.marketing-wrapper_row {
+    margin: 0 -1.5em 0;
+}
+
+.marketing-item {
+    .column-f(6);
+    padding: 0 1.5em;
+    margin-bottom: 4em;
+    text-align: center;
+
+    & div {
+        width: 50%;
+        font-size: 70%;
+    }
+
+    & ul {
+        font-size: 1.5em;
+        padding-left: 7em;
+    }
+}
+
+.marketing-item1 img {
+    width:  11rem;
+    height: 11rem;
+    margin-bottom: 2.5em;    
+}
+
+.clients {
+    min-height: 58em;
+}
+
+.services {
+    & .container {
+        min-height: 60em;
+        background-size:    auto 85%;
+        background-position: 50% 60%;
+    }
+}
+
+.services-item3 {
+    bottom: 0;
+}
+
+.services-item4 {
+    bottom: 0;
+}
+
+.feedback {
+    min-height: 42em;
+}
+
+.form-inline_block {
+    & button,
+    & input[type='text'] {
+        height: 3em;
+        width: 18em;
+        display: block;
+        margin: 0 auto 1em;
+    }
+
+    & input {
+        padding-left: 2em;
+        margin-right:   0;
+    }
+}
+
+.newest {
+    margin-bottom: 0;
+}
+
+.newest-item {
+    .column-f(6);
+    padding: 0 5em;
+    margin-bottom: 5em;
+
+    & p {
+        font-size: 1.7em;
+    }
+}
+}
+
+/* ----- MOBILE VERSION ----- */
+
+@media screen and (max-width: 799px) {
+/* ----- general rules ----- */
+
+.mob-slider .slick-dots {
+    bottom: -5em;
+
+    & li button {
+        background-color: #2988c7;
+    }
+}
+
+/* ----- HEADER ----- */
+
+header {
+    margin-bottom: 0;
+    min-height: 36rem;
+    background-size:   100% 100%;
+    background-position:  center;
+    background-repeat: no-repeat;
+    background-image: url('../img/mob-header_bg.png');
+
+    & .container {
+        background: none;
+    }
+}
+
+.header-top {
+    margin: 0 -1.5rem;
+    padding: 1rem 2rem;
+    background: #2988c7;
+}
+
+.nav {
+    display: none;
+}
+    
+.slicknav_menu {
+    display: block;
+}
+
+.desc-logo {
+    display: none;
+}
+
+.mob-logo {
+    float: left;
+    display: inline-block;
+}
+
+.phone {
+    float: none;
+    font-size:  4em;
+    text-align: right;
+    font-weight: bold;
+    text-align: center;
+    line-height: 4.3rem;
+
+    & a {
+        display: none; 
+    }
+}
+
+.feedback__contact-form {
+    display: none;
+}
+
+#slick-slider__single {
+    width: 100%;
+    text-align: center;
+}
+
+.slide-1 {
+    padding: 0;
+}
+
+.slide-2,
+.slide-3 {
+    display: none;
+}
+
+.slide_info {
+    padding: 0;
+    float: none;
+    width: 100%;
+    line-height: 1.5;
+    background: none;
+    margin-bottom: 3rem;
+
+    & div + div {
+        margin: 0;
+        width: 100%;
+        font-size: 55%;
+    }
+}
+
+#mob-button {
+    color: #FFF;
+    margin: auto;
+    border: none;
+    width:  35rem;
+    height:  7rem;
+    display: block;
+    font-size:  2.6em;
+    font-weight: bold;
+    border-radius: .6rem;
+    text-shadow: 0 .1rem 0 #C57F09;
+    -webkit-box-shadow: 0 4px 3px #2881BD, inset 0 2px 1px #FFEAB2;
+       -moz-box-shadow: 0 4px 3px #2881BD, inset 0 2px 1px #FFEAB2;
+            box-shadow: 0 4px 3px #2881BD, inset 0 2px 1px #FFEAB2;
+    background-image: linear-gradient(to top, #E59B00 0%, #FECF16 100%);
+}
+
+/* ----- SECTION .marketing ----- */
+
+.marketing { 
+    & .h1-wrapper {
+        width: 24rem;
+        margin: 0 auto;
+    }
+
+    & h1:after,
+    & h1:before {
+        background-position: 0 0%;
+    }
+}
+
+/* SLIDER */
+
+.marketing-item {
+    margin:  0;
+    padding: 0;
+}
+
+.marketing-item ul {
+    padding-left: 20%;
+}
+
+/* ----- SECTION .clients ----- */
+
+.clients .container {
+    padding-left:  0;
+    padding-right: 0;
+}
+
+/* ----- SECTION .services ----- */
+
+.services {
+    & .container {
+        min-height: 40rem;
+        background: none;
+    }
+
+    & .h1-wrapper {
+        width: 27rem;
+        margin: 0 auto;
+    }
+
+    & h1:after,
+    & h1:before {
+        background-position: 0 0%;
+    }
+}
+
+/* SLIDER */
+
+.services-item {
+    position: static;
+
+    & img {
+        position: static;
+        margin: 0 0 -2.5rem -2rem;
+    }
+}
+
+#slick-slider__single-2 {
+    width: 35rem;
+    margin: auto;
+    font-size: 1.2em;
+}
+
+/* ----- SECTION .feedback ----- */
+
+.feedback {
+    font-size: 1.25em;
+    min-height: 50rem;
+    background-size:   100% 100%;
+    background-position:  center;
+    background-repeat: no-repeat;
+    background-image: url("../img/mob-feedback_bg.png");
+}
+
+.form-inline_block {
+    & input[type="text"],
+    & button {
+        height: 4.4em;
+        width: 21.7em;
+        font-size: 1.7em;
+    }
+
+    & input {
+        padding-left: 2em;
+        margin-right:   0;
+    }
+}
+
+/* ----- SECTION .newest ----- */
+
+.newest {
+    margin-bottom: 6rem;
+}
+
+/* SLIDER */
+
+.slick-slider__courusel-3 .slick-dots {
+    bottom: -1rem;
+}
+
+/* ----- FOOTER ----- */
+
+footer {
+    padding: 0 1rem;
+    
+    & .container {
+        line-height: 6rem;
+        text-align: right;
+    }
+}
+
+.desc-logo__footer {
+    width: 17rem;
+    height: 6rem;
+    display: inline-block;
+}
+
+.phone__footer {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* ----- MODAL WINDOW ----- */
+
+/* OVERLAY */
+
+#overlay {
+    top:  0;
+    left: 0;
+    z-index: 3;
+    opacity: .6;
+    width:  100%;
+    height: 100%;
+    display: none;
+    position: fixed;
+    cursor: pointer;
+    background-color: #000;
+}
+
+/* FORM POPUP */
+
+.feedback__contact-form {
+    left: 50%;
+    top:  50%;
+    opacity: 0;
+    z-index: 4;
+    width: 50%;
+    display: none;
+    position: fixed;
+    padding: 2em 1.5em;
+    transform: translate(-50%, -50%);
+
+    button,
+    & input[type="text"],
+    & input[type="email"] {
+        height: 3em;
+    }
+}
+
+}
+
+@media screen and (max-width: 479px) {
+/* ----- general rules ----- */
+
+body {
+    font-size: .55em;
+}
+
+.phone__header {
+    padding-right: 2rem;
+}
+
+.mob-slider .slick-dots {
+    bottom: -5em;
+
+    & li button {
+        background-color: #2988c7;
+    }
+}
+
+/* ----- HEADER ----- */
+
+header {
+    min-height: 30rem;
+}
+
+.header-top {
+    margin-bottom: 0;
+    padding: .5rem 2rem;
+}
+
+.slide_info {
+    line-height: 1.3;
+    margin-bottom: 2rem;
+
+    & div + div {
+        font-size: 50%;
+    }
+}
+
+#mob-button {
+    width: 25rem;
+    height: 5rem;
+    font-size: 3em;
+}
+
+/* SLICKNAV */
+
+.slicknav_nav {
+    top: 1rem;
+
+    & a {
+        font-size: 1.7rem; 
+    }
+}
+
+/* ----- SECTION .marketing ----- */
+
+.marketing .h1-wrapper {
+    width: 16rem;
+}
+
+.slick-slider__courusel-1 {
+    font-size: 1.3em;
+}
+
+/* ----- SECTION .services ----- */
+
+.services {
+    & .container {
+        min-height: 35rem;
+    }
+
+    & .h1-wrapper {
+        width: 18rem;
+    }
+}
+
+/* SLIDER */
+
+
+#slick-slider__single-2 {
+    width: 27rem;
+    font-size: 1.5em;
+}
+
+/* ----- SECTION .feedback ----- */
+
+.feedback {
+    min-height: 37rem;
+
+    & .container div {
+        line-height: 2;
+        font-size: 1.7em;
+    }
+}
+
+/* ----- SECTION .newest ----- */
+
+.newest {
+    font-size: 1.2em;
+
+    & h3 {
+        font-size: 3em;
+    }
+}
+
+/* ----- FOOTER ----- */
+
+footer & .container {
+    line-height: 5rem;
+}
+
+
+.desc-logo__footer {
+    margin-top: 1rem;
+    width:   10rem;
+    height: 3.5rem;
+}
+}
+
+@media screen and (min-width: 361px) and (max-width: 479px) {
+.clients {
+    min-height: 70em;
+}
+ 
+}
+
+@media screen and (max-width: 319px) {
+body {
+    display: none;
+}	
+}
